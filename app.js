@@ -14,7 +14,13 @@ app.get('/auth/google', function (req, res) {
 });
 
 app.get('/authenticateToken', function (req, res) {
-    authenticateToken();
+    authenticateToken().then(function (json) {
+        if (json.success) {
+            res.send("Pasado")
+        } else {
+            res.send("Failed");
+        }
+    })
 });
 
 app.listen(3000, function () {

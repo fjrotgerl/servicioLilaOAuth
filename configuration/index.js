@@ -1,6 +1,6 @@
 module.exports = {
     verify: {
-        'success' : true,
+        'success' : false,
         'message' : 'verified'
     },
     token: {

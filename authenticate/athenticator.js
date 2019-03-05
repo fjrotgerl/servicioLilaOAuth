@@ -20,13 +20,6 @@ async function authenticate() {
         }).then(function (response) {
             return response.json();
         })
-            .then(function (json) {
-                if (json.success) {
-                    console.log("pasado");
-                } else {
-                    console.log("no pasado");
-                }
-            })
 }
 
 module.exports = authenticate;
